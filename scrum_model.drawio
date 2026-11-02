@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Scrum Process" id="scrum">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="650" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="Scrum Process" style="text;html=1;fontStyle=1;fontSize=28;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="10" width="400" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Roles -->
+        <mxCell id="po" value="Product Owner" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="75" y="130" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="sm" value="Scrum Master" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="40" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="dt" value="Development Team" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="885" y="60" width="30" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Backlog side -->
+        <mxCell id="us" value="User Stories" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="130" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="sb" value="Sprint Backlog" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="130" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Sprint cycle -->
+        <mxCell id="sprint" value="&lt;b&gt;Sprint&lt;/b&gt;&lt;br&gt;2-4 weeks" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="230" width="100" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="plan" value="Planning" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="410" width="130" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="impl" value="Implementation&lt;br&gt;(24 hours)" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="265" width="130" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="review" value="Review" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="435" y="130" width="130" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="retro" value="Retrospect" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#000000;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="265" width="130" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- Result side -->
+        <mxCell id="dod" value="Definition of Done" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="410" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="prod" value="Product Increment" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=15;fillColor=#f5f5f5;strokeColor=#000000;strokeWidth=2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="395" width="150" height="75" as="geometry"/>
+        </mxCell>
+
+        <!-- Flow arrows -->
+        <mxCell id="f1" style="endArrow=block;endFill=1;html=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="us" target="sb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="f2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;endFill=1;html=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="sb" target="plan"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="c1" style="edgeStyle=orthogonalEdgeStyle;curved=1;endArrow=block;endFill=1;html=1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0.5;entryY=1;" edge="1" parent="1" source="plan" target="impl"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="c2" style="edgeStyle=orthogonalEdgeStyle;curved=1;endArrow=block;endFill=1;html=1;strokeWidth=2;exitX=0.5;exitY=0;entryX=1;entryY=0.5;" edge="1" parent="1" source="impl" target="review"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="c3" style="edgeStyle=orthogonalEdgeStyle;curved=1;endArrow=block;endFill=1;html=1;strokeWidth=2;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="review" target="retro"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="c4" style="edgeStyle=orthogonalEdgeStyle;curved=1;endArrow=block;endFill=1;html=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="retro" target="plan"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="o1" style="edgeStyle=orthogonalEdgeStyle;curved=1;endArrow=block;endFill=1;html=1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" edge="1" parent="1" source="impl" target="dod"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="o2" style="endArrow=block;endFill=1;html=1;strokeWidth=2;" edge="1" parent="1" source="dod" target="prod"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
